@@ -19,6 +19,7 @@
 	"logout": "Log out",
 	"email": "Email Address",
 	"password": "Password",
+	"forgot_password": "Forgot Password",
 	"width": "Width",
 	"height": "Height",
 	"nick": "Name",
@@ -325,4 +326,5 @@
 	"export": "Export",
 	"media": "Media",
 	"tool_edit_text": "Edit Text"
+	"tool_space_help": "Use the toolbar to add content. \nYou can also drop images or sound and video files."
 }
