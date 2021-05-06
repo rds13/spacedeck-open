@@ -528,7 +528,7 @@ var SpacedeckSpaces = {
           space.name = title;
           save_space(space);
         }
-      }.bind(this), {value: folder.name, ok: __("ok"), cancel: __("cancel")});
+      }.bind(this), {value: space.name, ok: __("ok"), cancel: __("cancel")});
     },
 
     rename_folder: function(folder) {
