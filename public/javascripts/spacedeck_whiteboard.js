@@ -409,10 +409,12 @@ function setup_whiteboard_directives() {
 
       evt = fixup_touches(evt);
 
-      return {
+      point =  {
         x: $scope.scroll_left + (parseInt(evt.pageX) - $scope.bounds_margin_horiz) / $scope.viewport_zoom,
         y: $scope.scroll_top  + (parseInt(evt.pageY) - $scope.bounds_margin_vert)  / $scope.viewport_zoom
       };
+      console.log("Position in cursor_point_to_space point=("+ point.x + "," + point.y + ") at zoom=["+$scope.viewport_zoom+"] evt=("+evt.pageX+"," + evt.pageY+"), scroll=(" + $scope.scroll_left + "," + $scope.scroll_top + ") bounds=(" + $scope.bounds_margin_horiz + "," + $scope.bounds_margin_vert + ")")
+      return point;
     },
 
     rect_to_points: function(rect) {
